@@ -16,6 +16,11 @@ body {
     color: #084298; /* darker hover */
 }
 
+
+
+
+
+
 /* Hero section */
 .hero {
     padding: 120px 0;
@@ -32,6 +37,25 @@ body {
     font-size: 1.25rem;
     margin-bottom: 30px;
 }
+
+.about-section {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+    margin-bottom: 50px;
+}
+
+.about-img img {
+    height: 330px;
+    border-radius: 6px;
+    display: block;
+}
+
+.about-text {
+    flex: 1;
+}
+
+
 
 /* Footer */
 .footer {
