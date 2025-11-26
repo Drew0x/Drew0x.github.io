@@ -9,17 +9,12 @@ body {
 /* Navbar brand */
 .navbar-brand {
     font-weight: bold;
-    color: #0d6efd; /* Bootstrap primary blue */
+    color: #0d6efd;
     letter-spacing: 1px;
 }
 .navbar-brand:hover {
-    color: #084298; /* darker hover */
+    color: #084298;
 }
-
-
-
-
-
 
 /* Hero section */
 .hero {
@@ -38,30 +33,49 @@ body {
     margin-bottom: 30px;
 }
 
+/* -----------------------------
+   ABOUT SECTION (Desktop layout)
+--------------------------------*/
 .about-section {
     display: flex;
-    gap: 30px;
-    align-items: flex-start;
-    margin-bottom: 50px;
-}
-
-.about-img img {
-    height: 330px;
-    border-radius: 6px;
-    display: block;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 60px;
 }
 
 .about-text {
     flex: 1;
 }
 
+.about-img img {
+    width: 380px;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+}
 
+/* -----------------------------
+   RESPONSIVE — MOBILE FRIENDLY
+--------------------------------*/
+@media (max-width: 768px) {
+    .about-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-img img {
+        width: 100%;
+        max-width: 430px;
+        margin: 0 auto;
+    }
+}
 
 /* Footer */
 .footer {
     text-align: center;
     padding: 30px;
-    background: #212529; /* dark footer */
+    background: #212529;
     color: #fff;
     margin-top: 50px;
     border-top: 1px solid #444;
